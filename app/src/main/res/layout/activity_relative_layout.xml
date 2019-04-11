@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0c0c0"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".RelativeLayoutActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login view"
+        android:textColor="#000000"
+        android:textSize="34dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter user name"
+        android:background="#ffffff"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"/>
+    <EditText
+        android:id="@+id/editTexPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter password"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/editTextUserName"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editTexPassword" />
+</RelativeLayout>
